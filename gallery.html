@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUNJIRO Cinema - Movie Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">MUNJIRO<span> Cinema</span></div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Tickets</a>
+            <a href="gallery.html" class="nav-link active">Gallery / Catalog</a>
+        </nav>
+    </header>
+
+    <main class="gallery-section">
+        <div class="gallery-header">
+            <h2 class="section-title"><span>New Items</span> of this season</h2>
+            <div class="genre-selector">
+                <button class="genre-tab active">All</button>
+                <button class="genre-tab">Action</button>
+                <button class="genre-tab">Thriller</button>
+                <button class="genre-tab">Kids</button>
+            </div>
+        </div>
+        
+        <div class="movie-grid">
+            
+            <div class="movie-item">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/La casa.png" alt="La Casa de Papel Poster">
+                        </div>
+                        <div class="flip-card-back watermark-bg">
+                            <h3>Synopsis</h3>
+                            <p>An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history.</p>
+                            <button class="select-btn" onclick="selectMovie('La Casa de Papel', 'adult')">Select Movie</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-meta">
+                    <h4 class="movie-title">La Casa de Papel</h4>
+                    <p class="movie-genre">Thriller, Action</p>
+                    <span class="movie-rating">★ 8.2</span>
+                </div>
+            </div>
+
+            <div class="movie-item">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Zootopia.png" alt="Zootopia Poster">
+                        </div>
+                        <div class="flip-card-back watermark-bg">
+                            <h3>Synopsis</h3>
+                            <p>In a city of anthropomorphic animals, a rookie bunny cop and a cynical con fox must work together.</p>
+                            <button class="select-btn" onclick="selectMovie('Zootopia', 'child')">Select Movie</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-meta">
+                    <h4 class="movie-title">Zootopia</h4>
+                    <p class="movie-genre">Kids, Comedy</p>
+                    <span class="movie-rating">★ 8.0</span>
+                </div>
+            </div>
+
+            <div class="movie-item">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/Spiderman.png" alt="Spiderman Newday Poster">
+                        </div>
+                        <div class="flip-card-back watermark-bg">
+                            <h3>Synopsis</h3>
+                            <p>A fresh chapter unfolding in the web-slinging universe as new realities and heroes collide.</p>
+                            <button class="select-btn" onclick="selectMovie('Spiderman Newday', 'child')">Select Movie</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-meta">
+                    <h4 class="movie-title">Spiderman Newday</h4>
+                    <p class="movie-genre">Action, Kids</p>
+                    <span class="movie-rating">★ 8.5</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="cinema-backdrop-callout">
+        <div class="backdrop-content">
+            <h2>The Munjiro Experience</h2>
+            <p>Immerse yourself in Dolby Atmos surround sound matching crystal clear dual-laser premium projection systems.</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 MUNJIRO Cinema Entertainment Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

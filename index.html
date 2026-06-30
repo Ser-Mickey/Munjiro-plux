@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUNJIRO Cinema - Checkout Ticket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">MUNJIRO<span> Cinema</span></div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link active">Tickets</a>
+            <a href="gallery.html" class="nav-link">Gallery / Catalog</a>
+        </nav>
+    </header>
+
+    <main class="form-wrapper">
+        <div class="card">
+            <h2>Complete Your Booking</h2>
+            
+            <div class="form-group">
+                <label for="chosenMovie">Selected Movie:</label>
+                <input type="text" id="chosenMovie" class="disabled-field" readonly value="None Selected - Go to Catalog">
+            </div>
+
+            <div class="form-group">
+                <label for="userName">Full Name:</label>
+                <input type="text" id="userName" placeholder="Enter full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="userPhone">Phone Number:</label>
+                <input type="tel" id="userPhone" placeholder="e.g., 0712345678">
+            </div>
+            
+            <button class="submit-btn" onclick="generateTicket()">Get Ticket</button>
+        </div>
+
+        <div id="ticketDisplay"></div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 MUNJIRO Cinema Entertainment Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
